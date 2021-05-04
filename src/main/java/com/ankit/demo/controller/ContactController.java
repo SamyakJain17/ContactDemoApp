@@ -27,8 +27,8 @@ public class ContactController {
 	@Autowired
 	ContactService contactService;
 
-	@RequestMapping("/hello")
-        String home() {
+	@GetMapping("/hello")
+        private String home() {
         return "Hello World - v3!";
         }
 	// Retrieve All Contacts
