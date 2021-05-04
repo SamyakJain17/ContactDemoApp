@@ -27,6 +27,10 @@ public class ContactController {
 	@Autowired
 	ContactService contactService;
 
+	@RequestMapping("/hello")
+        String home() {
+        return "Hello World - v3!";
+        }
 	// Retrieve All Contacts
 	@ApiOperation(value = "Retrieve All Contacts", response = Contact.class)
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Retrieve All Contacts Successfully"),
